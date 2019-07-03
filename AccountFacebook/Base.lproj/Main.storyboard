@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewStoryboard" id="BYZ-38-t0r" customClass="ViewController" customModule="AccountFacebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7c-Kq-oSg">
+                                <rect key="frame" x="32" y="144" width="78.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhU-Fj-Db5">
+                                <rect key="frame" x="122.5" y="144" width="25" height="25"/>
+                                <color key="backgroundColor" red="0.22931393980000001" green="0.34072917699999999" blue="0.61391943689999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bTT-p0-xeY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J7c-Kq-oSg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="9dD-M8-gtr"/>
+                            <constraint firstItem="J7c-Kq-oSg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="LaN-5X-uPV"/>
+                            <constraint firstItem="VhU-Fj-Db5" firstAttribute="leading" secondItem="J7c-Kq-oSg" secondAttribute="trailing" constant="12" id="RcO-YW-Fgl"/>
+                            <constraint firstItem="VhU-Fj-Db5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="zcJ-F4-lvp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="21"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="t7w-Ml-GFK">
+            <objects>
+                <viewController storyboardIdentifier="MainStoryboard" id="3qv-le-w8M" customClass="MainViewController" customModule="AccountFacebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KGs-ji-G85">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lyI-6B-EE4">
+                                <rect key="frame" x="107" y="144" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="1M3-FU-g3f"/>
+                                    <constraint firstAttribute="height" constant="200" id="IdR-Zw-EsX"/>
+                                    <constraint firstAttribute="width" constant="200" id="YeA-ZW-6do"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="g2A-pd-xnZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onW-gC-9sg">
+                                <rect key="frame" x="12" y="364" width="390" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy6-VF-16h">
+                                <rect key="frame" x="12" y="408" width="390" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JT5-pC-XAB">
+                                <rect key="frame" x="309" y="782" width="55" height="30"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logout:" destination="3qv-le-w8M" eventType="touchUpInside" id="PXJ-F0-xRD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6W5-3S-eu5" firstAttribute="bottom" secondItem="JT5-pC-XAB" secondAttribute="bottom" constant="50" id="0ml-5K-eaD"/>
+                            <constraint firstItem="6W5-3S-eu5" firstAttribute="trailing" secondItem="onW-gC-9sg" secondAttribute="trailing" constant="12" id="0rT-SH-ROz"/>
+                            <constraint firstItem="6W5-3S-eu5" firstAttribute="trailing" secondItem="Cy6-VF-16h" secondAttribute="trailing" constant="12" id="1HG-tc-mKp"/>
+                            <constraint firstItem="onW-gC-9sg" firstAttribute="leading" secondItem="6W5-3S-eu5" secondAttribute="leading" constant="12" id="A38-Nf-DGt"/>
+                            <constraint firstItem="6W5-3S-eu5" firstAttribute="trailing" secondItem="JT5-pC-XAB" secondAttribute="trailing" constant="50" id="Iyr-54-pu3"/>
+                            <constraint firstItem="onW-gC-9sg" firstAttribute="top" secondItem="lyI-6B-EE4" secondAttribute="bottom" constant="20" id="Nbp-It-JjK"/>
+                            <constraint firstItem="lyI-6B-EE4" firstAttribute="centerX" secondItem="KGs-ji-G85" secondAttribute="centerX" id="Qmx-fW-nHP"/>
+                            <constraint firstItem="Cy6-VF-16h" firstAttribute="leading" secondItem="6W5-3S-eu5" secondAttribute="leading" constant="12" id="Vjs-Hr-LKG"/>
+                            <constraint firstItem="Cy6-VF-16h" firstAttribute="top" secondItem="onW-gC-9sg" secondAttribute="bottom" constant="20" id="o7H-F5-IHE"/>
+                            <constraint firstItem="lyI-6B-EE4" firstAttribute="top" secondItem="6W5-3S-eu5" secondAttribute="top" constant="100" id="rQp-Ky-q4V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6W5-3S-eu5"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="Cy6-VF-16h" id="veC-eR-ekG"/>
+                        <outlet property="name" destination="onW-gC-9sg" id="ybv-PK-2iC"/>
+                        <outlet property="photo" destination="lyI-6B-EE4" id="E68-Y8-w7r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6D-Sp-9Zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook" width="25" height="25"/>
+    </resources>
+</document>
